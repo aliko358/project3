@@ -15,9 +15,10 @@
         .header{
             display: flex;
             flex-wrap: wrap;
-            height: 400px;
+            height: 1520px;
             justify-content: space-around;
             align-items: center;
+            background-color: green;
         }
         .container{
             height: 300px;
@@ -29,6 +30,28 @@
             width: 220px;
             margin: auto;
             margin-top: 5px;
+            transition: 0.4s;
+        }
+        .box{
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 50px;
+            width: 200px;
+            background-color: cyan;
+            font-size: 25px;
+            border-radius: 10px;
+            transition: .4s;
+            box-shadow: 0 0 5px cyan,
+            0 0 15px cyan;
+        }
+        .box:hover{
+            box-shadow: 0 0 5px cyan,
+            0 0 10px cyan
+            0 0 15px cyan
+            0 0 20px cyan;
+            
         }
         .img1{
             background: url(1.png) center / cover;
@@ -63,10 +86,14 @@
         .footer{
             background-color: red;
             margin: 10px;
+            color: blue;
         }
     </style>
 </head>
 <body>
+    <div class="box">
+        <h1>AMG KL</h1>
+    </div>
     <div class="header">
         <div class="container">
             <div class="img img1"></div>
